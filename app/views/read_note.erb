@@ -1,0 +1,33 @@
+<div class="container">
+  <h1>Read Note!</h1>
+</div>
+<%=params.inspect%>
+<%= @notes.id %>
+<%if @notes.title %>
+<center><h3><%= @notes.title %></h3></center>
+<%end %> 
+<%=@notes.id%>
+
+
+<%if @notes.content %>
+<center><p><%= @notes.content %></p></center>
+<%end %>
+
+
+</div>
+<br>
+<br>
+<b
+<br>
+<center><form action = '/update' method='post'>
+<input type='hidden' name='id' value=<%= @notes.id %> >
+<BR>
+  <BR>
+Title<BR><input type = 'text' name= 'title' >
+<BR>
+  <BR>
+content<BR><input type = 'text' name= 'content'>
+<BR>
+<input type = 'submit' value= 'edit'>
+</form></center>
+
